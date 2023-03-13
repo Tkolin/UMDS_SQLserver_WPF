@@ -1,0 +1,53 @@
+﻿<Page x:Class="УЧЁТ_МЕДИЦИНСКИХ_ДАННЫХ_СТУДЕНТОВ.PageMain.PageWarning"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:УЧЁТ_МЕДИЦИНСКИХ_ДАННЫХ_СТУДЕНТОВ.PageMain"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="Флюорография (!)">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="67*"/>
+        </Grid.RowDefinitions>
+        <Grid Margin="0,52,0,0" Height="40" VerticalAlignment="Top">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#add9d0" Offset="0"/>
+                    <GradientStop Color="#FF6EBBAC" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="56"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Name="BTNBack" Foreground="White" Content="Назад" Height="32" FontSize="14" FontWeight="Bold" Margin="2" Background="#FF008266" Click="BTNBack_Click"/>
+            <Label Content="Поиск:"  VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Grid.Column="3"/>
+            <TextBox Name="TXBStud" Margin="2" FontSize="14" Height="32" VerticalContentAlignment="Center" Grid.Column="4" TextChanged="TXBStud_TextChanged"/>
+        </Grid>
+        <DataGrid IsReadOnly="True" FontSize="14" Name="DGStudent" AutoGenerateColumns = "false" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,92,0,0" Grid.RowSpan="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding StudentFIO}" Width="*" Header="Ф.И.О."/>
+                <DataGridTextColumn Binding="{Binding BirthDate}" Width="*" Header="Д/р"/>
+                <DataGridTextColumn Binding="{Binding Group.GroupName}" Width="*" Header="Группа"/>
+                <DataGridTextColumn Binding="{Binding Gender.GenderName}" Width="*" Header="Пол"/>
+                <DataGridTextColumn Binding="{Binding Status.StatusName}" Width="*" Header="Льгота"/>
+                <DataGridTextColumn Binding="{Binding StudentRegAddress}" Width="*" Header="Рег. адрес"/>
+                <DataGridTextColumn Binding="{Binding StudentFactAddress}" Width="*" Header="Факт. адрес"/>
+                <DataGridTextColumn Binding="{Binding Dorm.DormName}" Width="*" Header="Общежитие"/>
+                <DataGridTextColumn Binding="{Binding Contract.ContractName}" Width="*" Header="СФБ/ПВЗ"/>
+                <DataGridTextColumn Binding="{Binding EduForm.EduFormName}" Width="*" Header="Форма обучения"/>
+                <DataGridTextColumn Binding="{Binding PolisNumber}" Width="*" Header="Полис"/>
+                <DataGridTextColumn Binding="{Binding PolisGiven}" Width="*" Header="Кем выдан"/>
+                <DataGridTextColumn Binding="{Binding VacCert.VacCertName}" Width="*" Header="Серт. о прививках"/>
+                <DataGridTextColumn Binding="{Binding FluorDate}" Width="*" Header="Дата флюор."/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

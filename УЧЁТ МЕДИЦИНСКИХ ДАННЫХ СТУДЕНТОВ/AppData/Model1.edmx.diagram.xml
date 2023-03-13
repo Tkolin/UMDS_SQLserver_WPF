@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="84b62c4b4a144937806930675cd6da98" Name="Diagram1">
+        <EntityTypeShape EntityType="УМДСModel.Contract" Width="1.5" PointX="3" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="УМДСModel.Dorm" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="УМДСModel.EduForm" Width="1.5" PointX="3" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="УМДСModel.Gender" Width="1.5" PointX="3" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="УМДСModel.GrippStatus" Width="1.5" PointX="3" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="УМДСModel.Group" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="УМДСModel.Role" Width="1.5" PointX="7.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="УМДСModel.Speciality" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="УМДСModel.Status" Width="1.5" PointX="3" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="УМДСModel.Student" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="УМДСModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="УМДСModel.User" Width="1.5" PointX="10" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="УМДСModel.VacCert" Width="1.5" PointX="3" PointY="20.75" IsExpanded="true" />
+        <AssociationConnector Association="УМДСModel.FK_Student_Contract" ManuallyRouted="false" />
+        <AssociationConnector Association="УМДСModel.FK_Student_Dorm" ManuallyRouted="false" />
+        <AssociationConnector Association="УМДСModel.FK_Student_EduForm" ManuallyRouted="false" />
+        <AssociationConnector Association="УМДСModel.FK_Student_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="УМДСModel.FK_Student_GrippStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="УМДСModel.FK_Group_Speciality" ManuallyRouted="false" />
+        <AssociationConnector Association="УМДСModel.FK_Student_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="УМДСModel.FK_User_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="УМДСModel.FK_Student_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="УМДСModel.FK_Student_VacCert" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,88 @@
+﻿<Page x:Class="УЧЁТ_МЕДИЦИНСКИХ_ДАННЫХ_СТУДЕНТОВ.PageMain.PageStud"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:УЧЁТ_МЕДИЦИНСКИХ_ДАННЫХ_СТУДЕНТОВ.PageMain"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="Студент">
+
+    <Border VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" BorderThickness="3" CornerRadius="8,8,8,8">
+        <Border.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#add9d0" Offset="0"/>
+                <GradientStop Color="#FF6EBBAC" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.Background>
+        <Border.BorderBrush>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF6EBBAC" Offset="0"/>
+                <GradientStop Color="#add9d0" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.BorderBrush>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="160"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" FontSize="14" HorizontalAlignment="Right" FontWeight="Bold" Content="Фамилия:"/>
+            <Label Grid.Row="1" Grid.Column="0" FontSize="14" HorizontalAlignment="Right" FontWeight="Bold" Content="Имя:"/>
+            <Label Grid.Row="2" Grid.Column="0" FontSize="14" HorizontalAlignment="Right" FontWeight="Bold" Content="Отчество:"/>
+            <Label Grid.Row="3" Grid.Column="0" FontSize="14" HorizontalAlignment="Right" FontWeight="Bold" Content="Дата рождения:"/>
+            <Label Grid.Row="4" Grid.Column="0" FontSize="14" HorizontalAlignment="Right" FontWeight="Bold" Content="Группа:"/>
+            <Label Grid.Row="5" Grid.Column="0" FontSize="14" HorizontalAlignment="Right" FontWeight="Bold" Content="Льгота:"/>
+            <Label Grid.Row="6" Grid.Column="0" FontSize="14" HorizontalAlignment="Right" FontWeight="Bold" Content="Рег. адрес:"/>
+            <Label Grid.Row="7" Grid.Column="0" FontSize="14" HorizontalAlignment="Right" FontWeight="Bold" Content="Факт. адрес:"/>
+            <Label Grid.Row="8" Grid.Column="0" FontSize="14" HorizontalAlignment="Right" FontWeight="Bold" Content="Пол:"/>
+            <Label Grid.Row="9" Grid.Column="0" FontSize="14" HorizontalAlignment="Right" FontWeight="Bold" Content="Договор:"/>
+            <Label Grid.Row="10" Grid.Column="0" FontSize="14" HorizontalAlignment="Right" FontWeight="Bold" Content="Полис (№):"/>
+            <Label Grid.Row="11" Grid.Column="0" FontSize="14" HorizontalAlignment="Right" FontWeight="Bold" Content="Полис (кем выдан):"/>
+            <Label Grid.Row="12" Grid.Column="0" FontSize="14" HorizontalAlignment="Right" FontWeight="Bold" Content="Серт. о прививках:"/>
+            <Label Grid.Row="13" Grid.Column="0" FontSize="14" HorizontalAlignment="Right" FontWeight="Bold" Content="Общежитие:"/>
+            <Label Grid.Row="14" Grid.Column="0" FontSize="14" HorizontalAlignment="Right" FontWeight="Bold" Content="Дата флюорографии:"/>
+            <Label Grid.Row="15" Grid.Column="0" FontSize="14" HorizontalAlignment="Right" FontWeight="Bold" Content="Грипп:"/>
+            <Label Grid.Row="16" Grid.Column="0" FontSize="14" HorizontalAlignment="Right" FontWeight="Bold" Content="Форма обучения:"/>
+            <TextBox Grid.Row="0" Grid.Column="1" Name="TXBSurn" Height="32" FontSize="14"/>
+            <TextBox Grid.Row="1" Grid.Column="1" Name="TXBName" Height="32" FontSize="14"/>
+            <TextBox Grid.Row="2" Grid.Column="1" Name="TXBPatr" Height="32" FontSize="14"/>
+            <TextBox Grid.Row="3" Grid.Column="1" Name="TXBBirth" Height="32" FontSize="14"/>
+            <ComboBox Grid.Row="4" Grid.Column="1" Name="CMBGroup" FontSize="14"/>
+            <ComboBox Grid.Row="5" Grid.Column="1" Name="CMBStat" FontSize="14"/>
+            <TextBox Grid.Row="6" Grid.Column="1" Name="TXBReg" Height="32" FontSize="14"/>
+            <TextBox Grid.Row="7" Grid.Column="1" Name="TXBFact" Height="32" FontSize="14"/>
+            <ComboBox Grid.Row="8" Grid.Column="1" Name="CMBGend" FontSize="14"/>
+            <ComboBox Grid.Row="9" Grid.Column="1" Name="CMBContr" FontSize="14"/>
+            <TextBox Grid.Row="10" Grid.Column="1" Name="TXBPolN" Height="32" FontSize="14"/>
+            <TextBox Grid.Row="11" Grid.Column="1" Name="TXBPolG" Height="32" FontSize="14"/>
+            <ComboBox Grid.Row="12" Grid.Column="1" Name="CMBVac" FontSize="14"/>
+            <ComboBox Grid.Row="13" Grid.Column="1" Name="CMBDorm" FontSize="14"/>
+            <TextBox Grid.Row="14" Grid.Column="1" Name="TXBFluor" Height="32" FontSize="14"/>
+            <ComboBox Grid.Row="15" Grid.Column="1" Name="CMBGripp" FontSize="14"/>
+            <ComboBox Grid.Row="16" Grid.Column="1" Name="CMBEduF" FontSize="14"/>
+            <Button Grid.Row="17" Grid.Column="0" Name="BTNback" Foreground="White" Content="Назад" Margin="2" Height="32" FontSize="14" FontWeight="Bold" Background="#FF008266" Click="BTNback_Click"/>
+            <Button Grid.Row="17" Grid.Column="1" Name="BTNsave" Foreground="White" Content="Сохранить" Margin="2" Height="32" FontSize="14" FontWeight="Bold" Background="#FF008266" Click="BTNsave_Click"/>
+        </Grid>
+    </Border>
+</Page>
